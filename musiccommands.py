@@ -131,7 +131,7 @@ class YTDLSource(discord.PCMVolumeTransformer):
         embed.add_field(name='Uploader', value='[{0.source.uploader}]({0.source.uploader_url})'.format(self))
         embed.add_field(name='URL', value='[Click]({0.source.url})'.format(self))
         embed.set_thumbnail(url=self.source.thumbnail)
-        embed.set_footer(text="WEL2VEN || Developed by ๖ۣۜǤнσsτ☠𝕮𝖍𝖎𝖑𝖉#7252", icon_url="https://cdn.discordapp.com/avatars/730772954971111464/2d7e005a7fe4dc8e336d506beb08838d.webp?size=1024")
+        embed.set_footer(text="Developed by ༒ • ⚘!ϻR.ᎻᎯᏨᏦᎬᏒᴼᴾ•༒ ", icon_url="https://cdn.discordapp.com/attachments/712947661451427851/844921985679360050/pandasecurity-How-do-hackers-pick-their-targets.jpg")
         return embed
 
 
@@ -462,7 +462,7 @@ class Music(commands.Cog):
 
         async with ctx.typing():
             try:
-                source = await YTDLSource.create_source(ctx, search, loop=self.bot.loop, download=False)
+                source = await YTDLSource.create_source(ctx, search, loop=self.bot.loop,download=False)
             except YTDLError as e:
                 await ctx.send('An error occurred while processing this request: {}'.format(str(e)))
             else:
@@ -490,4 +490,4 @@ bot.remove_command("help")
 async def on_ready():
     print('Logged in as:\n{0.user.name}\n{0.user.id}'.format(bot))
 
-bot.run(TOKEN)
+bot.run(30scLzmt3hphWfC_kLARX44qeAZdXB0g')
